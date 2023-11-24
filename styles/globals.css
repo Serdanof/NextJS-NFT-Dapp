@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/assets//fonts/KanitRegular.ttf');
+}
+
+
+@layer base {
+    body {
+        @apply font-bold tracking-widest text-white font-kanit uppercase bg-[url('/assets/bg.png')] bg-no-repeat 5xl:bg-cover
+    }
+}
+
+@layer components {
+    .social {
+        @apply transition-all ease-in-out hover:scale-90
+    }
+    .btns {
+        @apply border-2 p-2 border-[#60B7BC] disabled:border-[#163638] w-[180px] h-[50px] font-bold text-xl uppercase tracking-widest text-black hover:border-[#499a9e] rounded-md transition-all ease-in-out
+    }
+    .incrementbtn {
+        @apply border-2 border-[#60B7BC] disabled:border-[#163638] text-black p-2 flex justify-center items-center rounded-full hover:border-[#499a9e] transition-all ease-in-out
+    }
+    .titleinfo {
+        @apply text-lg sm:text-xl tracking-widest
+    }
+    .textinfo {
+        @apply text-lg sm:text-xl tracking-widest
+    }
+}
